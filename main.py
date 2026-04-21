@@ -22,8 +22,11 @@ def carregar_dados() -> None:
     global safras
 
     if os.path.exists(ARQUIVO):
-        with open(ARQUIVO, "r", encoding="utf-8") as f:  # utf-8 permite uso de acentos
-            safras = json.load(f)
+        try:
+            with open(ARQUIVO, "r", encoding="utf-8") as f:
+                safras = json.load(f)
+        except json.JSONDecodeError:
+            safras = []
     else:
         safras = []
 
