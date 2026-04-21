@@ -28,7 +28,7 @@ Por permitir o armazenamento organizado das informações e calcular indicadores
 - Listagem de safras
 - Edição de registros
 - Remoção de registros
-    - Salvamento e carregamento dos dados também utilizando JSON
+    - Salvamento e carregamento dos dados em JSON
 - Cálculo de relatório (produção total, custo total e produtividade média)
     - Geração de relatório também em arquivo de texto
 

@@ -22,7 +22,7 @@ def carregar_dados() -> None:
     global safras
 
     if os.path.exists(ARQUIVO):
-        with open(ARQUIVO, "r", encoding="utf-8") as f:  # utf-8 foi sugestão do GPT
+        with open(ARQUIVO, "r", encoding="utf-8") as f:  # utf-8 permite uso de acentos
             safras = json.load(f)
     else:
         safras = []
@@ -31,7 +31,7 @@ def carregar_dados() -> None:
 # ------------------ SALVAR DADOS ------------------
 def salvar_dados() -> None:
     with open(ARQUIVO, "w", encoding="utf-8") as f:
-        json.dump(safras, f, indent=4, ensure_ascii=False)  # ensure_ascii=False foi sugestão do GPT
+        json.dump(safras, f, indent=4, ensure_ascii=False)  # ensure_ascii=False mantém caracteres especiais no json
 
 
 # ------------------ VALIDAR NÚMEROS ------------------
