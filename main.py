@@ -30,7 +30,7 @@ def carregar_dados() -> None:
 
 # ------------------ SALVAR DADOS ------------------
 def salvar_dados() -> None:
-    with open(ARQUIVO, "w", encoding="utf-8") as f:  # utf-8 foi sugestão do GPT
+    with open(ARQUIVO, "w", encoding="utf-8") as f:
         json.dump(safras, f, indent=4, ensure_ascii=False)  # ensure_ascii=False foi sugestão do GPT
 
 
@@ -201,7 +201,7 @@ def relatorio() -> None:
 
 # ------------------ RELATÓRIO TXT ------------------
 def gerar_relatorio_txt(total_producao, total_custo, total_area, produtividade_media) -> None:
-    with open(ARQUIVO_TXT, "w", encoding="utf-8") as f:  # utf-8 para suportar acentos no arquivo
+    with open(ARQUIVO_TXT, "w", encoding="utf-8") as f:
         f.write("RELATÓRIO AGROCONTROL\n")
         f.write("----------------------\n\n")
         f.write("Resumo Gerencial das Safras\n\n")
