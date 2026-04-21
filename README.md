@@ -48,3 +48,4 @@ Por permitir o armazenamento organizado das informações e calcular indicadores
 - Estruturas condicionais e de repetição
 
 `Outra OBS: Essa atividade e as demais dessa fase não foram enviadas conforme o tamplate sugerido, porque ainda estou criando o meu próprio. A partir da fase 3 os projetos estarão melhor organizados.`
+
