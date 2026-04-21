@@ -1,1 +1,9 @@
+RELATÓRIO AGRO CONTROL
+----------------------
 
+Resumo Gerencial das Safras
+
+Produção total: 18384 ton
+Custo total: R$ 530.000,00
+Área total: 320 ha
+Produtividade média: 57.45 ton/ha

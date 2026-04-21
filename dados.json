@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "id": 1,
+        "cultura": "soja",
+        "area_ha": 120.0,
+        "producao_ton": 384.0,
+        "custo": 180000.0,
+        "data": "15-03-2025"
+    },
+    {
+        "id": 2,
+        "cultura": "cana",
+        "area_ha": 200.0,
+        "producao_ton": 18000.0,
+        "custo": 350000.0,
+        "data": "10-09-2025"
+    }
+]
