@@ -61,8 +61,14 @@ def cadastrar_safra() -> None:
         if not validar_positivo(custo, "Custo"):
             return
 
+        # gera ID único baseado no maior ID existente
+        if safras:
+            novo_id = max(s["id"] for s in safras) + 1
+        else:
+            novo_id = 1
+
         safra = {
-            "id": len(safras) + 1,
+            "id": novo_id,
             "cultura": cultura,
             "area_ha": area,
             "producao_ton": producao,
@@ -72,7 +78,7 @@ def cadastrar_safra() -> None:
 
         safras.append(safra)
         salvar_dados()
-        print("Safra cadastrada com sucesso!")
+        print(f"Safra cadastrada com sucesso! ID gerado: {novo_id}")
 
     except ValueError:
         print("Erro: digite apenas números válidos.")
@@ -202,7 +208,7 @@ def relatorio() -> None:
 # ------------------ RELATÓRIO TXT ------------------
 def gerar_relatorio_txt(total_producao, total_custo, total_area, produtividade_media) -> None:
     with open(ARQUIVO_TXT, "w", encoding="utf-8") as f:
-        f.write("RELATÓRIO AGROCONTROL\n")
+        f.write("RELATÓRIO AGRO CONTROL\n")
         f.write("----------------------\n\n")
         f.write("Resumo Gerencial das Safras\n\n")
 
